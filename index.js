@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const {withHermes} = require('Hermes-Javascript'); /* Die Hermes zu Javascript Bibliothek wird eingebunden. Sie realisiert die Weitergabe der in der STT erkannten Schlüsselworte und deren Intents */
+const {withHermes} = require('hermes-javascript'); /* Die Hermes zu Javascript Bibliothek wird eingebunden. Sie realisiert die Weitergabe der in der STT erkannten Schlüsselworte und deren Intents */
 
 //Funktion zum ausführen von Konsolenbefehlen
 function execute(command) 
@@ -41,7 +41,7 @@ withHermes(hermes => {
 			console.log(entries);
 		}); /* der Inhalt, des Ordners in dem die Scripte liegen,  wird in ein Array gepackt und anschließend im Log ausgegeben */
 		flow.end()
-		return "Es stehen" entries  "zur Auswahl"
+		return "Es stehen" + entries + "zur Auswahl"
 	})
 
 })
