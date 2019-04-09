@@ -30,7 +30,7 @@ withHermes(hermes => {
 		fs.readdir('./Scripts/', (err, entries) => 
 		{
 			console.log(entries);
-		}); /**/
+		}); /* der Inhalt, des Ordners in dem die Scripte liegen,  wird in ein Array gepackt und anschließend im Log ausgegeben */
 		flow.end()
 		return "Es stehen" entries  "zur Auswahl"
 	})
