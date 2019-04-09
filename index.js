@@ -15,7 +15,7 @@ function execute(command)
 withHermes(hermes => {
 	const dialog = hermes.dialog()
 
-	dialog.flow('n01:ExecBash', (msg, flow) => /* Wenn der Intent, der von Hermes übergeben wird, StartScript ist wird eine Konsolenbefehlt ausgeführt */
+	dialog.flow('n01:ExecBash', (msg, flow) => /* Wenn der Intent, der von Hermes übergeben wird, "StartScript" ist wird ein Konsolenbefehl ausgeführt */
 	{
 		console.log(msg)
 		execute('echo "Test" > /home/n01/test.txt') /**/
