@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const {withHermes} = require('Hermes-Javascript'); /* Die Hermes zu Javascript Bibliothek wird eingebunden. Sie realisiert die Weitergabe der in der STT erkannten Schlüsselworte und deren Intents */
 
 //Funktion zum ausführen von Konsolenbefehlen
