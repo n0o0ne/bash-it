@@ -22,7 +22,7 @@ withHermes(hermes => {
 		execute('echo "Test" > /home/n01/test.txt') /**/
 		if (err) 
 		{
-			console.log(err.message);
+			return console.log(err.message);
 		}
 		flow.end()
 		return "Der Test Text wurde in die Testdatei geschrieben!"
@@ -35,7 +35,7 @@ withHermes(hermes => {
 		{
 			if (err) 
 			{
-				console.log(err.message);
+				return console.log(err.message);
 			}
 			console.log(entries);
 		}); /* der Inhalt, des Ordners in dem die Scripte liegen,  wird in ein Array gepackt und anschließend im Log ausgegeben */
